@@ -25,11 +25,11 @@ load_data <- function() {
   }
 
   # load the data into global environment
-  emissions <<- readRDS(emissions_file)
-  scc <<- readRDS(scc_file)
+  NEI <<- readRDS(emissions_file)
+  SCC <<- readRDS(scc_file)
 }
 
-# check if emissions and scc are in global environment
-if (!("emissions" %in% ls() & "scc" %in% ls())) {
+# check if NEI and SCC are in global environment
+if (!("NEI" %in% ls() & "SCC" %in% ls())) {
   load_data()
 }
