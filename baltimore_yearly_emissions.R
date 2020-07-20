@@ -14,4 +14,3 @@ plot(year, baltimore_emissions, type = "l",
 points(year, baltimore_emissions, pch = 20)
 
 dev.off()
-
